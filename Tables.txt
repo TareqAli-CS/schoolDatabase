@@ -1,0 +1,9 @@
+Course          ( C_id,
+Section         ( Section_id , Course_id
+Room            ( Room_id,
+Student         ( S_id ,fullName , 
+Staff           ( Staff_id
+Student type    ( 
+staff role      ( role_id , staff_id
+salary          ( role_id , 
+regesterStudent ( S_id , SSN 

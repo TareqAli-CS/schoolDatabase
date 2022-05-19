@@ -1,9 +1,13 @@
-Course          ( C_id,
-Section         ( Section_id , Course_id
-Room            ( Room_id,
+Course          ( Course_ID primary key,Course_Name,
+Section         ( Section_id primary key , Course_id , staff_id ,room_id , time 
+Room            ( Room_id primary key,
 Student         ( S_id ,fullName , 
 Staff           ( Staff_id
 Student type    ( 
 staff role      ( role_id , staff_id
 salary          ( role_id , 
-regesterStudent ( S_id , SSN 
+regesterStudent ( SSN , fullName  ,regesterDate,DateOfBirth, gender , 
+father          ( father_id , ssn , phone_id ,
+phone           ( phone_id , 
+
+

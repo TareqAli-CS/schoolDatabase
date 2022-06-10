@@ -1,0 +1,84 @@
+create table teachers(
+Tid number(5) primary key,
+f_name varchar(50),
+l_name varchar(50),
+address varchar(50),
+phone number(10),
+email varchar(50),
+supervisor number(5)
+);
+
+===============================================
+
+create table family(
+fid number(5),
+father_name varchar(50),
+mother_name varchar(50),
+family_name varchar(50),
+family_phone number(10)
+);
+
+===============================================
+
+create table class(
+class_id number(5),
+class_name varchar(50)
+);
+
+================================================
+
+create table student(
+Sid number(5) primary key,
+f_name varchar(50),
+l_name varchar(50),
+DOB date,
+phone number(10),
+email varchar(50),
+address varchar(50),
+Fid number(5) f.k,
+class_id number(5) f.k
+);
+
+=================================================
+create table course(
+cid number(5) primary key,
+course_name varchar(50)
+);
+
+=================================================
+
+create table exam(
+eid number(5) primary key,
+exam_name varchar(50)
+);
+
+==================================================
+
+create table book(
+bid number(5) primary key,
+book_name varchar(50)
+);
+
+===================================================
+
+create table take(
+sid number(5) p.k,
+eid number(5) p.k,
+grade number(5,2)
+);
+
+===================================================
+
+create table give(
+tid number(5) p.k,
+cid number(5) p.k
+);
+
+====================================================
+
+create table teach(
+tid number(5) p.k,
+class_id number(5) p.k
+);
+
+
